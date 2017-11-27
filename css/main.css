@@ -1,0 +1,369 @@
+﻿body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.clear::after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+@font-face {
+    font-family: Pompadur;
+    src: url("../fonts/pompadur.ttf");
+}
+
+#main_container {
+    width: 100%;
+    background-image: url("../image/background.png");
+    padding-bottom: 3%;
+    font-family: Pompadur;
+}
+
+#main_padding {
+    width: 86%;
+    background-color: white;
+    margin-left: 7%;
+    border-left: 2px solid #fdebf2;
+    border-right: 2px solid #fdebf2;
+    border-bottom: 2px solid #fdebf2;
+}	
+
+#content_container {
+    width: 94%;
+    margin-left: 3%;		
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    margin-bottom: 10px;
+    background: url("../image/piks_line.png") repeat-x;
+}	
+
+.line_solid{
+    width: 100%;
+    height: 6px;
+    margin-bottom: 20px;
+    background: url("../image/line_solid_gorizontal.png") repeat-x;
+}
+
+
+
+/* header */
+header {
+    background-color: white;
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+}  
+
+.main_menu {
+    width: 45%;
+    float: right;
+}
+
+.nav_col_1, .nav_col_2, .nav_col_3	{
+    font-size: 1.3em;
+    font-weight: 500;
+    list-style-type: none;
+    list-style-image: url("../image/roza_serdce_small.png");
+    padding: 0 6% 0 6%;
+    float: left;
+}
+
+.nav_col_1 li, .nav_col_2 li, .nav_col_3 li {
+    text-align: center;
+    padding-top: 5px;
+    border-bottom: 2px solid #fdebf2;
+    padding-bottom: 5px;
+}	
+
+.nav_col_1 li a, .nav_col_2 li a, .nav_col_3 li  a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #7d1128;
+}
+/* /header */
+
+
+
+/* main_img_container */
+
+.main_img_container {
+    background-color: #feb0b9;
+    width: 100%;
+    position: relative;
+}	
+
+.main_img_nav {
+    float: left;
+    margin: 36px 0 35px 0;
+    font-weight: bold;
+    font-size: 1.7em;
+    list-style-type: none;
+    list-style-image: url("../image/serdce_small.png");
+}
+
+.main_img_nav li  {
+    margin-left: 3%;
+    padding-bottom: 8%;
+}
+
+.main_img_nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main_img_slider {
+    width: 65%;
+    float: left;
+}
+
+#slides {
+    position: relative;
+}
+
+#slides img {
+    max-width: 100%;
+}
+
+.slide {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: opacity 1s;
+    z-index: 1;
+}
+
+.showing {
+    z-index: 2;
+    opacity: 1;
+    
+}
+
+.control_previous, .control_next {
+    position: relative;
+    top: 140px;
+    left: 0;
+    padding: 10px;
+    color: #7d1128;
+    border-radius: 0 3px 3px 0;
+    font-family:  Arial;
+    font-size: 25px;
+    font-weight: 800;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.6s ease;
+}
+
+.control_next {
+    left: 629px;
+}
+
+.control_previous:hover, .control_next:hover {
+    color: #feb0b9;
+    background-color: rgba(250, 250, 250, 0.8);
+}	
+/* /main_img_container */
+
+  
+  
+  
+/* planner */    
+.planner{
+    background-color: white;
+    width: 100%;
+}		
+
+.wedding_planner{
+    width: 45%;
+    float: left;
+    padding-right: 5%;
+    margin: 3% 0 4% 0;
+    border-right: 3px solid #fdebf2;
+}
+            
+.perfect_plan{
+    width: 45%;
+    float: right;
+    margin: 3% 0 4% 0;
+}
+
+.image_planner{
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+    margin-right: 5%;
+}
+
+.text_planner{
+    width: 57%;
+    float: left;
+    color: #7d1128;
+}
+
+.text_planner a{
+    float: right;
+    font-family:  Arial;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.text_planner p{
+    font-family:  Arial;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* /planner */ 
+
+
+
+/* catalog*/
+.catalog_container{
+    margin: 2.5% 0 2% 0;
+    background-color: white;
+    width: 100%;
+    color: #7d1128;
+}			
+
+.catalog_container h2 {
+    margin-bottom: 3.5%;
+}			
+
+.catalog{
+    width: 100%;
+}	
+
+.catalog_section{
+    max-width: 23%;
+    min-width: 200px;
+    float: left;
+    margin: 0 1% 4% 1%;
+}
+
+.catalog_section a {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-family: Arial;
+    font-style: italic;
+    font-size: 16px;
+}
+
+
+.catalog_section a img {
+    transition:  0.3s;
+    max-width: 100%;
+}
+
+.catalog_section a img:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* /catalog */
+
+
+
+/* news */
+.fresh_news{
+    width: 100%;
+    margin: 3% 0 7% 0;
+    background-color: white;
+    color: #7d1128;
+}
+
+.fresh_news h2{
+    width: 100%;
+    margin: 0 0 3% 0;
+    color: #7d1128;
+}	
+	
+.news  {
+    width: 44%;
+    padding: 0 3% 0 2.8%;
+}
+
+.news a{
+    display: block;
+    float: right;
+    font-family:  Arial;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.news_left {
+    float: left;
+}
+
+.news_right {
+    float: right;
+}
+
+.news_text{
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 1.5;
+}	
+
+.circle{
+    width: 70px;
+    height: 70px;
+    background-color: #fb929e;
+    border-radius: 50%;
+    margin-right: 17px;
+    float: left;
+}
+
+.circle p {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: white;
+    margin-top: 13px;
+    margin-bottom: 0px;
+    text-align: center;
+}
+/* /news */
+
+
+
+/* footer */
+footer {
+    background-color: white;
+    width: 100%;
+    margin: 2% 0 2% 0;
+    color: #7d1128;
+}		
+
+.footer_logo{
+    max-width: 100%;
+    max-height: 100%;
+    float: left;
+}  
+
+.footer_info{
+    float: right;
+    padding-top: 1%;
+    margin-right: 43%;
+    text-align: center;
+    font-size: 16px;
+}
+/* /footer */

@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Свадебный салон</title>
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<link type="text/css" rel="stylesheet" href="css/photo_gallery.css"/>
+    
+    <script type="text/javascript" src="js/photo_gallery.js" defer></script>  
+</head>
+
+<body>
+    <div id="main_container">
+    
+        <div id="main_padding">
+        
+            <div id="content_container">
+            
+                <header class="clear">
+                    <img class="logo" src="image/logo-img-475x150.png" alt="логотип" />
+                    <nav class="main_menu">
+                        <ul class="nav_col_1">
+                            <li><a href="index.html">главная</a></li>
+                            <li><a href="">о нас</a></li>
+                        </ul>
+                        <ul class="nav_col_2">
+                            <li><a href="main_catalog.html">товары</a></li>
+                            <li><a href="">услуги</a></li>
+                        </ul>
+                        <ul class="nav_col_3">
+                            <li><a href="">фотогалерея</a></li>
+                            <li><a href="contacts.html">контакты</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="line"></div>
+                
+                
+                
+                <div class="gallery_container">
+                
+                    <div class="row">
+                        <div class="column">
+                            <img src="image/fotogallery/1.jpg"  class="hover-shadow" onclick="openModal();currentSlide(1)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/2.jpg"  class="hover-shadow" onclick="openModal();currentSlide(2)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/3.jpg"  class="hover-shadow" onclick="openModal();currentSlide(3)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/4.jpg"  class="hover-shadow" onclick="openModal();currentSlide(4)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="image/fotogallery/5.jpg"  class="hover-shadow" onclick="openModal();currentSlide(5)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/6.jpg"  class="hover-shadow" onclick="openModal();currentSlide(6)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/7.jpg"  class="hover-shadow" onclick="openModal();currentSlide(7)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/8.jpg"  class="hover-shadow" onclick="openModal();currentSlide(8)">
+                        </div>
+                    </div>               
+                    <div class="row">
+                        <div class="column">
+                            <img src="image/fotogallery/9.jpg"  class="hover-shadow" onclick="openModal();currentSlide(5)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/10.jpg"  class="hover-shadow" onclick="openModal();currentSlide(6)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/11.jpg"  class="hover-shadow" onclick="openModal();currentSlide(7)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/12.jpg"  class="hover-shadow" onclick="openModal();currentSlide(8)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="image/fotogallery/13.jpg"  class="hover-shadow" onclick="openModal();currentSlide(5)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/14.jpg"  class="hover-shadow" onclick="openModal();currentSlide(6)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/15.jpg"  class="hover-shadow" onclick="openModal();currentSlide(7)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/16.jpg"  class="hover-shadow" onclick="openModal();currentSlide(8)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img src="image/fotogallery/17.jpg"  class="hover-shadow" onclick="openModal();currentSlide(5)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/18.jpg"  class="hover-shadow" onclick="openModal();currentSlide(6)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/19.jpg"  class="hover-shadow" onclick="openModal();currentSlide(7)">
+                        </div>
+                        <div class="column">
+                            <img src="image/fotogallery/20.jpg"  class="hover-shadow" onclick="openModal();currentSlide(8)">
+                        </div>
+                    </div>
+                    
+                    
+
+                    <div id="myGalerry" class="gallery">
+                        <span class="close " onclick="closeModal()">&times;</span>
+                      
+                        <div class="gallery-content">
+                            <div class="mySlides">
+                                <div class="numbertext">1 / 20</div>
+                                <img src="image/fotogallery/1.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">2 / 20</div>
+                                <img src="image/fotogallery/2.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">3 / 20</div>
+                                <img src="image/fotogallery/3.jpg">
+                            </div>                    
+                            <div class="mySlides">
+                                <div class="numbertext">4 / 20</div>
+                                <img src="image/fotogallery/4.jpg">
+                            </div>                      
+                            <div class="mySlides">
+                                <div class="numbertext">5 / 20</div>
+                                <img src="image/fotogallery/5.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">6 / 20</div>
+                                <img src="image/fotogallery/6.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">7 / 20</div>
+                                <img src="image/fotogallery/7.jpg">
+                            </div>           
+                             <div class="mySlides">
+                                <div class="numbertext">8 / 20</div>
+                                <img src="image/fotogallery/8.jpg">
+                            </div>
+                            <div class="mySlides">
+                                <div class="numbertext">9 / 20</div>
+                                <img src="image/fotogallery/9.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">10/ 20</div>
+                                <img src="image/fotogallery/10.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">11 / 20</div>
+                                <img src="image/fotogallery/11.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">12 / 20</div>
+                                <img src="image/fotogallery/12.jpg">
+                            </div> <div class="mySlides">
+                                <div class="numbertext">13 / 20</div>
+                                <img src="image/fotogallery/13.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">14 / 20</div>
+                                <img src="image/fotogallery/14.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">15 / 20</div>
+                                <img src="image/fotogallery/15.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">16 / 20</div>
+                                <img src="image/fotogallery/16.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">17 / 20</div>
+                                <img src="image/fotogallery/17.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">18 / 20</div>
+                                <img src="image/fotogallery/18.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">19 / 20</div>
+                                <img src="image/fotogallery/19.jpg">
+                            </div>
+                             <div class="mySlides">
+                                <div class="numbertext">20 / 20</div>
+                                <img src="image/fotogallery/20.jpg">
+                            </div>
+
+                            
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="line_solid"></div>
+                            
+                            
+                <footer class="clear">
+                    <img class="footer_logo" src="image/logo-img-footer.png" alt="логотип" />
+                    <p class="footer_info">Love Letter © 2017<br/>e-mail: info@loveletter.by</p>
+                </footer>	
+                
+            </div>	
+        </div>
+    </div>
+</body>
+</html>

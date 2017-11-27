@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Свадебный салон</title>
+	<link type="text/css" rel="stylesheet" href="css/main.css"/>
+	<link type="text/css" rel="stylesheet" href="css/contacts.css"/>
+
+    <script type="text/javascript" src="js/contacts.js" defer></script>  
+</head>
+
+<body>
+    <div id="main_container">
+    
+        <div id="main_padding">
+        
+            <div id="content_container">
+            
+                <header class="clear">
+                    <img class="logo" src="image/logo-img-475x150.png" alt="логотип" />
+                    <nav class="main_menu">
+                        <ul class="nav_col_1">
+                            <li><a href="index.html">главная</a></li>
+                            <li><a href="">о нас</a></li>
+                        </ul>
+                        <ul class="nav_col_2">
+                            <li><a href="main_catalog.html">товары</a></li>
+                            <li><a href="">услуги</a></li>
+                        </ul>
+                        <ul class="nav_col_3">
+                            <li><a href="photo_gallery.html">фотогалерея</a></li>
+                            <li><a href="">контакты</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+                <div class="line"></div>
+                <div class="line_solid"></div>
+                
+                <div class="contacts_container clear">
+                    <div class="address_contact">
+                        <h3>Наш адрес:</h3>
+                        <p>г. Минск, ул. Земляничная, 15</p>
+                        
+                        <h3>Телефоны:</h3>
+                        <p>+375 (29) 111-22-444</br>
+                            +375 (33) 111-33-555</br>
+                            e-mail: info@loveletter.by
+                        </p>
+                        
+                        <h3>Время работы:</h3>
+                        <p>пн - пт: 11.00 - 20.00<br/>
+                            сб: 10.00 - 16.00<br/>
+                            вс: выходной<br/>
+                        </p>
+                        <p></p>
+                        <h2>Прием по предварительной записи!</h2>	
+                    </div>	
+                        
+                    <div class="form_for_contact clear">
+                        <h1>Написать сообщение!</h1>
+                        <form class="contact_form" name="contact" action="http://fe.it-academy.by/TestForm.php" method="post">
+                                                   
+                            <div class="row">
+                                <label for="name">Ваше Имя:</label>
+                                <input type="text" name="name" id="name" class="txt" tabindex="1" placeholder="Ваше Имя" required>
+                                <div class="error_msg"></div>
+                            </div>
+                            
+                            <div class="row">
+                                <label for="email_adress">E-mail Адрес:</label>
+                                <input type="email" name="email_adress" id="email_adress" class="txt" tabindex="2" placeholder="address@mail.ru" required>
+                                <div class="error_msg"></div>
+                            </div>
+
+                            <div class="row">
+                                <label for="tel_number">Телефон:</label>
+                                <input type="tel" name="tel_number" id="tel_number" class="txt" tabindex="3" placeholder="+375(xx)xxx-xx-xx">
+                                <div class="error_msg"></div>
+                            </div>					
+                            
+                            <div class="row">
+                                <label for="subject">Тема:</label>
+                                <input type="text" name="subject" id="subject" class="txt" tabindex="4" placeholder="Тема письма" required>
+                                <div class="error_msg"></div>
+                            </div>
+                            
+                            <div class="row">
+                                <label for="message">Сообщение:</label>
+                                <textarea name="message" id="message" class="txt" tabindex="5" placeholder="Текст сообщения" required></textarea>
+                                <div class="error_msg"></div>
+                            </div>
+                            
+                            <div class="row" id="button">
+                                <input type="submit" name="submitbtn"  id="submitbtn" tabindex="6" value="Отправить Сообщение">
+                                <div class="error_msg"></div>
+                            </div>
+                        </form>	
+                    </div>
+                </div>	
+                  
+                <div class="line_solid"></div>
+                            
+                <footer class="clear">
+                    <img class="footer_logo" src="image/logo-img-footer.png" alt="логотип" />
+                    <p class="footer_info">Love Letter © 2017<br/>e-mail: info@loveletter.by</p>
+                </footer>	
+                
+            </div>	
+        </div>
+    </div>
+</body>
+</html>
